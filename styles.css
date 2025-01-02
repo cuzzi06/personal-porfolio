@@ -1,7 +1,19 @@
+:root {
+  --secondary-color: rgb(142, 142, 142);
+  --border-color: black;
+}
+
+body {
+  padding: 2rem;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top: 2px solid var(--border-color);
+  border-left: 2px solid var(--border-color);
+  border-right: 2px solid var(--border-color);
 }
 
 #logo {
@@ -25,4 +37,29 @@ header {
 .menu a {
   text-decoration: none;
   color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Robolt x Hand Light";
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 2px solid var(--border-color);
+  border-left: 2px solid var(--border-color);
+  border-right: 2px solid var(--border-color);
+}
+
+.hero h1 {
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+.hero p {
+  color: var(--secondary-color);
 }
