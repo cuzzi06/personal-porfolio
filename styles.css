@@ -162,6 +162,16 @@ section#projects li:first-of-type {
   border-top: none;
 }
 
+section#projects a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+section#projects a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
 section#work-experience {
   border-left: none;
   border-right: none;
