@@ -29,11 +29,6 @@ body {
   font-family: var(--secondary-font);
 }
 
-/* Contenedores */
-.container {
-  /* border: 2px solid var(--border-color); */
-}
-
 .border {
   border: 2px solid var(--border-color); /* Aplica bordes completos por defecto */
   border-top: none; /* Elimina el borde superior para evitar duplicados */
