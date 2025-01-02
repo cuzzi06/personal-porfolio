@@ -1,14 +1,27 @@
+/* Importaciones */
 @import url(./fonts.css);
 
+/* Variables globales */
 :root {
   --primary-font: "Caveat", cursive;
   --secondary-font: "Roboto", sans-serif;
+
   --body-background-color: white;
   --primary-color: black;
   --secondary-color: rgb(142, 142, 142);
   --border-color: black;
+
+  --heading-font-size: 2.5rem;
+  --paragraph-font-size: 1rem;
+
+  --top-bottom-padding: 1rem;
+  --left-right-padding: 2rem;
+
+  --element-gap: 1rem;
+  --section-padding: 2rem;
 }
 
+/* Estilos globales */
 body {
   padding: 2rem;
   background-color: var(--body-background-color);
@@ -16,14 +29,18 @@ body {
   font-family: var(--secondary-font);
 }
 
+/* Contenedores */
+.container {
+  border: 2px solid var(--border-color);
+}
+
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: var(--primary-color);
-  border-top: 2px solid var(--border-color);
-  border-left: 2px solid var(--border-color);
-  border-right: 2px solid var(--border-color);
+  padding: var(--top-bottom-padding) var(--left-right-padding);
 }
 
 #logo {
@@ -49,12 +66,25 @@ header {
   color: inherit;
 }
 
+.menu a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+.menu a:focus {
+  outline: 2px dashed var(--primary-color);
+  outline-offset: 4px;
+}
+
+/* Tipografía */
 h1,
 h2,
 h3 {
   font-family: var(--primary-font);
+  font-size: var(--heading-font-size);
 }
 
+/* Hero Section */
 .hero {
   display: flex;
   justify-content: center;
@@ -62,8 +92,8 @@ h3 {
   flex-direction: column;
   height: 20rem;
   border-bottom: 2px solid var(--border-color);
-  border-left: 2px solid var(--border-color);
-  border-right: 2px solid var(--border-color);
+  padding: var(--section-padding);
+  gap: var(--element-gap);
 }
 
 .hero h1 {
@@ -73,4 +103,22 @@ h3 {
 
 .hero p {
   color: var(--secondary-color);
+  font-size: var(--paragraph-font-size);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: var(--section-padding);
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
