@@ -31,16 +31,30 @@ body {
 
 /* Contenedores */
 .container {
-  border: 2px solid var(--border-color);
+  /* border: 2px solid var(--border-color); */
+}
+
+.border {
+  border: 2px solid var(--border-color); /* Aplica bordes completos por defecto */
+  border-top: none; /* Elimina el borde superior para evitar duplicados */
+}
+
+header.border {
+  border-top: 2px solid var(--border-color);
 }
 
 /* Header */
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   color: var(--primary-color);
   padding: var(--top-bottom-padding) var(--left-right-padding);
+}
+
+header .top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #logo {
@@ -93,7 +107,6 @@ h3 {
   align-items: center;
   flex-direction: column;
   height: 20rem;
-  border-bottom: 2px solid var(--border-color);
   padding: var(--section-padding);
   gap: var(--element-gap);
 }
