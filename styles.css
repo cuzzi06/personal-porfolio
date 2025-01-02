@@ -132,12 +132,40 @@ main {
 
 .main-container > section {
   flex: 1; /* Asegura que todas las secciones ocupen el mismo ancho */
-  padding: var(--section-padding);
 }
 
 /* Ajuste específico para la sección #projects */
 .main-container #projects {
   flex: 0.5; /* Ocupa menos espacio en comparación con las demás */
+}
+
+/* Secciones */
+
+section#projects h2 {
+  padding: var(--section-padding) var(--section-padding) 0
+    var(--section-padding);
+}
+
+section#projects ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+section#projects li {
+  padding: 0.5rem calc(var(--section-padding) + 0.5rem);
+  border-top: 2px solid var(--border-color);
+}
+
+section#projects li:first-of-type {
+  padding: 0.5rem calc(var(--section-padding) + 0.5rem);
+  border-top: none;
+}
+
+section#work-experience {
+  border-left: none;
+  border-right: none;
+  padding: 0;
 }
 
 /* Responsive Design */
