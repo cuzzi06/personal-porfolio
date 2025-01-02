@@ -1,7 +1,28 @@
 header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #logo {
   width: 4rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: inherit;
 }
