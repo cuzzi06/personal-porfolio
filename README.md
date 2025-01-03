@@ -27,13 +27,13 @@ Welcome to the portfolio website of **Gianfranco Palacios Cuzzi**, showcasing my
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/portfolio.git
+   git clone https://github.com/cuzzi06/personal-porfolio
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd portfolio
+   cd personal-portfolio
    ```
 
 3. Open the `index.html` file in your browser to view the website.
