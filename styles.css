@@ -38,6 +38,11 @@ header.border {
   border-top: 2px solid var(--border-color);
 }
 
+.reviews {
+  border-right: 2px solid var(--border-color);
+  border-left: 2px solid var(--border-color);
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -190,7 +195,7 @@ section#work-experience {
 }
 
 aside {
-  padding: 0.5rem var(--section-padding);
+  padding: 0.5rem var(--section-padding) var(--section-padding);
 }
 
 .quotes {
@@ -215,6 +220,16 @@ blockquote {
 
 blockquote footer {
   color: var(--secondary-color);
+}
+
+/* Footer */
+
+footer.border {
+  font-family: var(--primary-font);
+  padding: var(--section-padding);
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 /* Responsive Design */
@@ -245,7 +260,7 @@ blockquote footer {
   :root {
     --body-background-color: #121212;
     --primary-color: #ffffff;
-    --secondary-color: #b3b3b3;
+    --secondary-color: #ffbd38;
     --border-color: #ffffff;
   }
 }
