@@ -12,34 +12,37 @@
       content="Projects, Frontend Development, HTML, CSS, JavaScript, Gianfranco Palacios Cuzzi"
     />
     <meta name="author" content="Gianfranco Palacios Cuzzi" />
+    <link rel="stylesheet" href="./../CSS/projects.css" />
+    <link rel="stylesheet" href="./../CSS/reset.css" />
     <title>Projects - Gianfranco Palacios Cuzzi</title>
   </head>
   <body>
-    <header>
-      <div class="brand">
-        <div class="logo">
-          <img src="../images/logo.jpeg" alt="logo" />
+    <header class="border">
+      <div class="top-header">
+        <div class="brand">
+          <div class="logo">
+            <img src="../images/logo.jpeg" alt="logo" />
+          </div>
+          <div class="myName">Gianfranco Palacios Cuzzi</div>
         </div>
-        <div class="myName">Gianfranco Palacios Cuzzi</div>
+        <nav class="menu" aria-label="Main Navigation">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="projects.html" aria-current="page">Projects</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="menu" aria-label="Main Navigation">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="projects.html" aria-current="page">Projects</a></li>
-          <li><a href="articles.html">Articles</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
       <section class="hero">
         <h1>My Projects</h1>
         <p>
           A showcase of projects I have built to enhance my frontend skills.
         </p>
       </section>
+    </header>
 
+    <main>
       <section id="project-list">
         <article>
           <h2>Calculator</h2>
