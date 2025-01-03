@@ -183,7 +183,7 @@ section#work-experience {
 
 #work-experience h3 {
   font-family: var(--primary-font);
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 .we-1 h3 {
@@ -196,7 +196,7 @@ section#work-experience {
 }
 
 .we-1 p:last-of-type {
-  margin: 0.5rem 0 0;
+  margin: 0.5rem 0;
 }
 
 #work-experience a {
@@ -211,6 +211,10 @@ section#work-experience {
 
 .we-2 {
   padding: 0.5rem var(--section-padding);
+}
+
+.we-2 p {
+  margin: 0.5rem 0;
 }
 
 /* Responsive Design */
