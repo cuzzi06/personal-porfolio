@@ -217,6 +217,21 @@ section#work-experience {
   margin: 0.5rem 0;
 }
 
+#education {
+  padding: 0.5rem var(--section-padding);
+}
+
+#education p {
+  margin: 0.5rem 0;
+}
+
+#education h3 {
+  font-family: var(--primary-font);
+  font-size: 1.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero {
