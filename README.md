@@ -56,6 +56,10 @@ Feel free to reach out for collaborations, inquiries, or feedback:
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
+## Roadmap
+
+This project is inspired by the [Portfolio Website Project Roadmap](https://roadmap.sh/projects/portfolio-website).
+
 ---
 
 Thank you for visiting my portfolio website! 😊
