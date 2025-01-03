@@ -30,12 +30,38 @@ body {
 }
 
 .border {
-  border: 2px solid var(--border-color); /* Aplica bordes completos por defecto */
-  border-top: none; /* Elimina el borde superior para evitar duplicados */
+  border: 2px solid var(--border-color);
+  border-top: none;
 }
 
 header.border {
   border-top: 2px solid var(--border-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:focus {
+  outline: 3px solid var(--secondary-color);
+  outline-offset: 4px;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+/* Tipografía */
+h1,
+h2 {
+  font-family: var(--primary-font);
+  font-size: var(--heading-font-size);
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 5rem);
 }
 
 /* Header */
@@ -72,28 +98,6 @@ header .top-header {
   font-size: var(--paragraph-font-size);
 }
 
-.menu a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.menu a:hover {
-  color: var(--secondary-color);
-  text-decoration: underline;
-}
-
-.menu a:focus {
-  outline: 2px dashed var(--primary-color);
-  outline-offset: 4px;
-}
-
-/* Tipografía */
-h1,
-h2 {
-  font-family: var(--primary-font);
-  font-size: var(--heading-font-size);
-}
-
 /* Hero Section */
 .hero {
   display: flex;
@@ -116,7 +120,6 @@ h2 {
 }
 
 /* Main */
-
 main {
   display: flex;
   flex-direction: column;
@@ -124,22 +127,20 @@ main {
 }
 
 .main-container {
-  display: flex; /* Habilita Flexbox */
-  justify-content: space-between; /* Espacio uniforme entre secciones */
-  align-items: stretch; /* Asegura que todas las secciones tengan la misma altura */
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 .main-container > section {
-  flex: 1; /* Asegura que todas las secciones ocupen el mismo ancho */
+  flex: 1;
 }
 
-/* Ajuste específico para la sección #projects */
 .main-container #projects {
-  flex: 0.5; /* Ocupa menos espacio en comparación con las demás */
+  flex: 0.5;
 }
 
 /* Secciones */
-
 section#projects h2 {
   padding: 0.5rem var(--section-padding) 0 var(--section-padding);
 }
@@ -156,18 +157,7 @@ section#projects li {
 }
 
 section#projects li:first-of-type {
-  padding: 0.5rem calc(var(--section-padding) + 0.5rem);
   border-top: none;
-}
-
-section#projects a {
-  text-decoration: none;
-  color: var(--primary-color);
-}
-
-section#projects a:hover {
-  color: var(--secondary-color);
-  text-decoration: underline;
 }
 
 section#work-experience {
@@ -186,50 +176,45 @@ section#work-experience {
   font-size: 1.75rem;
 }
 
-.we-1 h3 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.we-1 p {
-  margin: 0.5rem 0;
-}
-
-.we-1 p:last-of-type {
-  margin: 0.5rem 0;
-}
-
-#work-experience a {
-  text-decoration: none;
-  color: var(--primary-color);
-}
-
-#work-experience a:hover {
-  text-decoration: underline;
-  color: var(--secondary-color);
-}
-
 .we-2 {
   padding: 0.5rem var(--section-padding);
-}
-
-.we-2 p {
-  margin: 0.5rem 0;
 }
 
 #education {
   padding: 0.5rem var(--section-padding);
 }
 
-#education p {
-  margin: 0.5rem 0;
-}
-
 #education h3 {
   font-family: var(--primary-font);
   font-size: 1.75rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+}
+
+aside {
+  padding: 0.5rem var(--section-padding);
+}
+
+.quotes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+blockquote {
+  border: 2px solid var(--border-color);
+  border-radius: 3rem;
+  width: 20rem;
+  min-height: 16rem;
+  padding: 0.5rem var(--section-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+blockquote footer {
+  color: var(--secondary-color);
 }
 
 /* Responsive Design */
@@ -246,5 +231,21 @@ section#work-experience {
   .menu ul {
     flex-direction: column;
     gap: 0.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .quotes {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-background-color: #121212;
+    --primary-color: #ffffff;
+    --secondary-color: #b3b3b3;
+    --border-color: #ffffff;
   }
 }
