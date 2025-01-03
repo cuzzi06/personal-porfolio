@@ -89,8 +89,7 @@ header .top-header {
 
 /* Tipografía */
 h1,
-h2,
-h3 {
+h2 {
   font-family: var(--primary-font);
   font-size: var(--heading-font-size);
 }
@@ -142,8 +141,7 @@ main {
 /* Secciones */
 
 section#projects h2 {
-  padding: var(--section-padding) var(--section-padding) 0
-    var(--section-padding);
+  padding: 0.5rem var(--section-padding) 0 var(--section-padding);
 }
 
 section#projects ul {
@@ -176,6 +174,43 @@ section#work-experience {
   border-left: none;
   border-right: none;
   padding: 0;
+}
+
+.we-1 {
+  border-bottom: 2px solid var(--border-color);
+  padding: 0.5rem var(--section-padding);
+}
+
+#work-experience h3 {
+  font-family: var(--primary-font);
+  font-size: 1.5rem;
+}
+
+.we-1 h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.we-1 p {
+  margin: 0.5rem 0;
+}
+
+.we-1 p:last-of-type {
+  margin: 0.5rem 0 0;
+}
+
+#work-experience a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+#work-experience a:hover {
+  text-decoration: underline;
+  color: var(--secondary-color);
+}
+
+.we-2 {
+  padding: 0.5rem var(--section-padding);
 }
 
 /* Responsive Design */
