@@ -50,7 +50,7 @@ a:hover {
   border-top: none;
 }
 
-header.border {
+main {
   border-top: 2px solid var(--border-color);
 }
 
